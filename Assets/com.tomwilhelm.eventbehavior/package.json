@@ -1,0 +1,23 @@
+{
+  "name": "com.tomwilhelm.eventbehavior",
+  "version": "0.0.2",
+  "displayName": "Event Behavior",
+  "description": "This is an example package",
+  "unity": "2019.1",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexmachina/EventBehavior.git",
+    "revision": ""
+  },
+  "keywords": [
+    "Events",
+    "Unity",
+    "Delay"
+  ],
+  "author": {
+    "name": "Tom Wilhelm",
+    "email": "tomrwilhelm@gmail.com",
+    "url": "https://www.tom-wilhelm.com"
+  }
+}
