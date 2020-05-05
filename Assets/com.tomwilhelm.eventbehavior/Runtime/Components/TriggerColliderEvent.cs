@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace EventBehavior
 {
-	public class TriggerEvent : MonoBehaviour
+	[AddComponentMenu("Event Behavior/Trigger Collider Event")]
+	public class TriggerColliderEvent : MonoBehaviour
 	{
 		public LayerMask layerMask = ~0;
 

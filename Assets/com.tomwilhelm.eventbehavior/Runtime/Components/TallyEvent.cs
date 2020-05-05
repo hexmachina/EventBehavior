@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 namespace EventBehavior
 {
+	[AddComponentMenu("Event Behavior/Tally Event")]
 	public class TallyEvent : MonoBehaviour
 	{
 		public int startValue = 0;

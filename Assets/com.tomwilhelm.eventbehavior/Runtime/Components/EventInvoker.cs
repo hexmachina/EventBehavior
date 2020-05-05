@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EventInvoker : MonoBehaviour
+namespace EventBehavior
 {
-	public UnityEvent onInvoke = new UnityEvent();
-
-	public void Invoke()
+	[AddComponentMenu("Event Behavior/Event Invoker")]
+	public class EventInvoker : MonoBehaviour
 	{
-		onInvoke.Invoke();
+		public UnityEvent onInvoke = new UnityEvent();
+
+		public void Invoke()
+		{
+			onInvoke.Invoke();
+		}
 	}
+
 }
+

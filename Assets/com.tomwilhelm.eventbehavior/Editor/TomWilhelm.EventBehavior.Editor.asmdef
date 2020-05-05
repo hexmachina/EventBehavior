@@ -1,3 +1,15 @@
-﻿{
-	"name": "TomWilhelm.EventBehavior"
+{
+    "name": "TomWilhelm.EventBehavior.Editor",
+    "references": [
+        "GUID:c4114cf1d60a86247ac29b018a9dbbfb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
