@@ -9,13 +9,12 @@ namespace EventBehavior
 	{
 		public LayerMask layerMask = ~0;
 
+		public bool includeCollisionWithTriggers = true;
+
 		[Header("Collider Tag")]
 		public bool checkTags = false;
 
 		public bool inclusive = false;
-
-		public bool includeCollisionWithTriggers = true;
-
 
 		public List<string> tags = new List<string>();
 
@@ -26,7 +25,7 @@ namespace EventBehavior
 
 		private void OnTriggerEnter(Collider other)
 		{
-			if (enabled && ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer))
+			if (isActiveAndEnabled && ((layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer))
 			{
 				if (!includeCollisionWithTriggers && other.isTrigger)
 					return;
@@ -49,7 +48,7 @@ namespace EventBehavior
 
 		private void OnTriggerStay(Collider other)
 		{
-			if (enabled && (layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+			if (isActiveAndEnabled && (layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
 			{
 				if (!includeCollisionWithTriggers && other.isTrigger)
 					return;
@@ -71,7 +70,7 @@ namespace EventBehavior
 
 		private void OnTriggerExit(Collider other)
 		{
-			if (enabled && (layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
+			if (isActiveAndEnabled && (layerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
 			{
 				if (!includeCollisionWithTriggers && other.isTrigger)
 					return;
